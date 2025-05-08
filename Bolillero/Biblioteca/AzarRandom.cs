@@ -1,10 +1,9 @@
 using Biblioteca;
-public class AzarRandom : Azar
+public class RandomAzar : IAzar
 {
-    Random random = new Random();
-    public int ObtenerSiguiente(int maximo)    
+    private Random _random = new Random();
+    public int SacarNumero(int maximo)
     {
-        return random.Next(maximo);
+        return _random.Next(maximo);
     }
-    
 }

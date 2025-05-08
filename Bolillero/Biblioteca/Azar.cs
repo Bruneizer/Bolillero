@@ -1,7 +1,6 @@
 ﻿namespace Biblioteca;
 
-public interface Azar
+public interface IAzar
 {
-    int ObtenerSiguiente(int maximo);
+    int SacarNumero(int maximo);
 }
-
